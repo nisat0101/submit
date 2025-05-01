@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web layout</title>
+    <style>
+        .header{
+            width: 98%;
+            height: 100px;
+            border: 1px solid rgb(18, 17, 17);
+            /* background-color: #328E6E; */
+            background-color:#a1e3a6;
+            background-color:#2a3a50;
+            
+            /* background-color:#c7003d; */
+           
+            
+            
+            /* nav section start */
+        }
+        .logo{
+            display: inline;
+            float: ;
+            padding: 5px;
+        }
+        .logo>img{
+            width:20% ;
+            height: 100px;
+            /* object-fit: cover; */
+            object-fit: contain;
+        
+            float: left;
+            
+
+               
+           
+        }
+        .nav {
+            float: left;
+            text-align: center;
+            display: inline-block;
+            padding: 15px;
+            justify-content: center;
+            
+        }
+        .nav>a{
+            padding: 15px;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: bisque;
+        }
+
+        .dropdown_container{
+            float: right;
+            position: relative;
+            color: bisque;
+        }
+        .dropdown_container>a{
+            color: bisque;
+        }
+        .dropdown_list{
+            position: absolute;
+            /* display: none; */
+            top: 10px;
+            right: 10px;
+            display: none;
+            
+        }
+
+             /* nav section end  */ 
+        .left{
+            width: 30%;
+            height: 804px;
+            border: 1px solid rgb(0, 0, 0);
+            float: left;
+            background-color: gold
+        }
+        .left>img{
+            width: 100%;
+            height: 804px;
+            object-fit:cover ;
+        }
+       
+        .right_top{
+            width: 68%;
+            height: 400px;
+            border: 1px solid rgb(55, 35, 144);
+            float: left;
+        }
+        #nature{
+            width: 100%;
+            height: 400px;
+            
+        }
+        
+        .right_bottom_left{
+            width: 34%;
+            height: 401px;
+            border: 2px solid rgb(205, 15, 15);
+            float: left ;
+            background-color: #67AE6E;
+            object-fit: cover;
+            box-shadow: outset 3px 3px 3px;
+
+
+
+        }
+        .right_bottom_left>img{
+            width: 100%;
+            height: 401px;
+            object-fit: cover;
+            
+        }
+
+        .right_bottom_right{
+            width: 33.3%;
+            height: 401px;
+            border: 2px solid rgb(39, 41, 40);
+            float: left;
+            background-color: rgb(10, 32, 24);
+            gap: 5px;
+            margin: 0px;
+            
+        }
+        .right_bottom_right>img{
+            width: 100%;
+            
+            object-fit: contain;
+            position: relative ;
+            top:px ;
+            bottom: 10px;
+            border: 2px solid gold;
+            box-shadow: outset 10px 3px 10px;
+            
+        }
+        .footer{
+            width: 98.5%;
+            height: 100px;
+            border: 0px solid rgb(10, 10, 10);
+            clear: both;
+            /* background-color: rgb(46, 167, 167); */
+            text-align: center;
+            background-image:url(footerimg.jpg) ;
+            background-size: 100%;
+            object-fit: cover
+            
+                                                                            ;
+        }
+        .footer>p{
+            font-style: italic;
+            font-weight: 600;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="main">
+            <!-- Heder Section -->
+          <div class="header">
+            <div class="logo"> <img  id="logo" src="logo.png" alt="logo"> </div>
+            <div class="nav">
+                <a href="">Home</a>
+                <a href="">Portfolio</a>
+                <a href="">Vision</a>
+                <a href="">Gallary</a>
+                <div class="dropdown_container">
+                    <a href="" style="text-decoration: none;" >Contact Us</a>
+                    <div class="dropdown_list">
+                        <a href="">Email</a>
+                        <a href="">Phone</a>
+                    </div>
+                </div>
+            </div> 
+          </div> 
+          <!-- header section close -->
+          <div class="left"> <img src="leftimg.jpg" alt="image"></div> 
+          <div class="right_top"><img  id="nature" src="nature.jpg" alt="nature"></div>
+          <div class="right_bottom_left"><img src="bottomleft.jpg" alt="nature"></div>
+          <div class="right_bottom_right"><img src="bottomright.jpg" alt=""><img src="bird.jpg" alt=""></div>
+          <div class="footer">
+            <p> Nature is the most close part of life <br>
+                and nature can heal everthynig 
+
+            </p>
+          </div>
+
+        
+    </div>
+</body>
+</html>
