@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+        }
+        body{
+            background-color: lightskyblue;
+        }
+        .container{
+            width: 100%;
+            object-fit: contain;
+            
+            
+        }
+        /* heder item */
+        .header{
+            width: 100%;
+            height: 60px;
+            background-color: #383b02e4;
+
+        }
+        
+        .logo{
+            float: left;
+            width: 60px;
+            height: 50px;
+            margin-right: 100PX;
+            margin-left: 20px;
+            margin-top: 10px;
+            
+
+
+        }
+        .logo>img{
+            width: 50px;
+            height: 40px;
+            object-fit: contain;
+            
+
+        }
+        .menu{
+            float: left;
+            width: ;
+            margin-top: 15PX;
+            margin-left:250PX ;
+            
+        }
+        .menu>a{
+            padding: 10PX;
+            margin: 20PX;
+            text-decoration: none;
+            color: rgb(249, 251, 253);
+            font-size: larger;
+            font-weight:500 ;
+
+        }
+        .button{
+            margin-top: 18PX;
+            margin-right: 20px;
+            float: right;
+        }
+        
+        #bt{
+            border: 3px solid black;
+        }
+        #inp{
+            border: 3px solid black;
+        }
+        
+        /* main item  */
+        .mainleft{
+            
+            width: 30%;
+            height:400px ;
+            float: left;
+            background-color: #dadee1;
+            object-fit: contain;
+        }
+        .mainleft>a{
+            display: block;
+            margin: 20px 60px;
+            text-decoration: none;
+            color: black;
+            font-size: large;
+            font-weight: 400;
+        
+
+        }
+        .mainright{
+           
+            width: 70%;
+            height:400px ;
+            float: right;
+            background-color: bisque;
+
+        }
+        .mainright>img{
+            width: 100%;
+            height:400px ;
+            object-fit: cover;  
+            
+        }
+        
+        /* footer item */
+        .footer{
+            
+           
+            clear: both;
+            
+
+        }
+        .footer>img{
+            width: 100%;
+            height: 100px;
+            object-fit: cover;
+
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo"> 
+                <img src="logoheader.png" alt="logo">
+            </div>
+            <div class="menu">
+                <a href="#"> About us </a> 
+                <a href="#"> Menu </a> 
+                <a href="#"> Home </a> 
+                
+
+            </div>
+            <div class="button" >
+                <button id="bt"> Search</button>
+                <input type="search" id="inp">
+                
+            </div>
+
+        </div>
+        <div class="mainleft">
+            <img src="" alt="">
+            <a href="#">About Us</a>
+            <a href="#">Search Book</a>
+            <a href="#">Upload Book</a>
+            <a href="#">The News
+            </a>
+
+        </div>
+        <div class=" mainright">
+            <img src="mainright.jpg" alt="">
+
+        </div>
+        <div class="footer">
+            <img src="footer.webp" alt="">
+
+        </div>
+
+    </div>
+</body>
+</html>
