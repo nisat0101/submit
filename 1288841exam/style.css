@@ -1,0 +1,94 @@
+.header{
+    width: 100%;
+    height: 12vh;
+    border: 1px solid black ;
+    background-color: rgb(55, 109, 224);
+
+}
+.logo{
+    float: left;
+    
+    margin:0px 10px ;
+    
+}
+.logo>img{
+    width: 100%;
+    height: 8vh;
+    object-fit: cover;
+
+}
+
+.nav{
+    float: left;
+    
+    /* margin-top:  20px;
+    margin-left:  200px;
+   ; */
+
+}
+.nav>a{
+    font-size: large;
+    font-weight: 300;
+    /* margin:20px ; */
+    text-decoration: none ;
+    color: rgb(255, 247, 247);
+
+}
+.button{
+    margin-top:  20px;
+    margin-left:  200px;
+
+    float: right
+   
+}
+/* left section  */
+.left{
+    
+    width: 30%;
+    height: 400px;
+    float: left;
+    background-color: rgba(91, 174, 180, 0.644);
+}
+.left>a{
+    display: block;
+    text-decoration: none;
+    font-size: large;
+    font-weight: 300;
+    margin:20px ;
+    color: black;
+    margin-left: 100px;
+}
+/* right section */
+.right{
+   
+    width: 101.5%;
+    height: 400px;
+
+}
+.right>img{
+    width:69% ;
+    height: 398px;
+    object-fit: cover;
+}
+/* footer Section  */
+.footer{
+    
+    width: 100%;
+    height: 100px;
+    clear: both;
+
+}
+.footer>img{
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+ 
+ a:hover{
+    background-color: aqua;
+    border: 1px solid black;
+    width: 50%;
+ }
+ img:hover{
+    transform: scale(1.05);
+transition: transform 0.2s ease;
