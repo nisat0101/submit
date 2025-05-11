@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>photoframe</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+
+        }
+       
+       
+        .container{
+            height: 100vh;
+            width: 100%;
+            color: #f5f5f5;
+            background-image: linear-gradient(to right, #ff8177 0%, #ff867a 0%, #ff8c7f 21%, #f99185 52%, #cf556c 78%, #b12a5b 100%);
+            overflow: hidden;
+            
+            display: grid;
+            grid-template-columns: repeat(7,1fr);
+            grid-template-rows: repeat(7,1fr);
+            grid-template-areas: 
+                "a a b b c c c "
+                "a a b b c c c "
+                "a a e e e f f  "
+                "d d e e e f f "
+                "d d e e e f f "
+                "g g g h h i i "
+                "g g g h h i i "
+                 ;
+                 
+        }
+        .item{
+
+            
+             overflow: hidden;
+            border: 2px solid rgb(26, 19, 19);
+            
+            
+           
+            
+        }
+        /* image section */
+        img{
+            border:3px solid wheat;
+            object-fit: cover;
+            object-position: top;
+            width: 100%;
+            height: 100%;
+           
+        }
+        .b>img{
+            object-position: 40% 35%;
+        }
+        .ca>img{
+            object-fit:cover;
+            object-position:100% 10%;
+        }
+        .f>img{
+            object-fit: cover;
+            object-position: 20% 15%;
+
+        }
+        .e>img{
+            object-fit: cover;
+            object-position:50% 20%;
+
+        }
+        .h>img{
+            object-fit: cover;
+            object-position: 20% 20%;
+        }
+        .nisat{
+            object-fit: cover;
+            object-position: 20% 40%;
+        }
+         /* item section */
+        .a{
+            grid-area:a ;
+           
+            
+            width: 100%;
+            height: 100%;
+            margin: ;
+             justify-self: center;
+            align-self: center;
+        }
+        .b{
+             grid-area:b ;
+              object-fit: cover;
+            object-position: top;
+            width: 100%;
+            height: 100%;
+            margin: ;
+             justify-self: center;
+            align-self: center;
+        }
+        
+        .c{
+             grid-area: c;
+             display: flex;
+        }
+        .c>div{
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        .d{
+             grid-area: d ;
+             display: flex;
+        }
+        .d>div{
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
+        }
+        .e{
+             grid-area: e;
+        }
+        .f{
+             grid-area: f
+        }
+        .g{
+             grid-area:  g;
+             display: flex;
+        }
+        .g>div{
+            height: 100%;
+            width: 100%;
+            border: 1px solid black;
+        }
+
+        .h{
+             grid-area:  h;
+        }
+        .i{
+             grid-area:  i;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item a"><img src="na/ajpg.jpg" alt=""></div>
+        <div class="item b"><img src="na/oldjpg.jpg" alt="photo"></div>
+        <div class="item c">
+            <div class="ca"> <img src="na/final.jpg" alt=""></div>
+            <div class="cb"> <img src="na/nace.jpg" alt="b"></div>
+           
+        </div>
+        <div class="item d">
+            <div class="da"><img src="na/nisatjpg.jpg" class="nisat" alt="photo"></div>
+            <div class="db"><img src="na/adury2.jpg" alt="photo"></div>
+        </div>
+        <div class="item e"><img src="na/nacd.jpg" alt="photo"></div>
+        <div class="item f"><img src="na/adury.jpg" alt="photo"></div>
+        <div class="item g">
+            <div class="ga"><img src="na/nisat.jpg" alt="photo"></div>
+            <div class="gb"><img src="na/nisat2.jpg" alt="photo"></div>
+            <div class="gc"><img src="na/nisat3.jpg" alt="photo"></div>
+        </div>
+        <div class="item h"><img src="na/nas.jpg" alt="photo"></div>
+        <div class="item i"><img src="na/present.jpg" alt="photo"></div>
+
+    </div>
+</body>
+</html>

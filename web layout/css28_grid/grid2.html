@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid -2nd example </title>
+   <style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100%;
+        width:100%;
+    }
+    .container{
+        height: 100%;
+        width: 100%;
+        background-color: rgb(68, 61, 61);
+        padding: 10px;
+        display: grid;
+        
+        gap: 0.4rem;
+        grid-template-columns:repeat(3,1fr) ;
+        grid-template-rows: repeat(4,200px);
+        border: 5px solid red;
+        justify-items: center;
+        align-items: center;
+    }   
+    .item{
+        height: 100px ;
+        width: 100px; 
+        background-color: blue;
+        /* border: 1px solid wheat; */
+        padding: 5px;
+        border: 3px solid white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+        
+        /* margin: 10px; */
+    }
+    .A{
+        /* justify-self: stretch; */
+    }
+    .C{
+        /* justify-self: end; */
+        /* align-self: end; */
+    }
+    .A{
+        /* justify-self: start; */
+    }
+    .E{
+        /* justify-self: start; */
+    }
+   </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="item A">A</div>
+        <div class="item B">B</div>
+        <div class="item C">C</div>
+        <div class="item D">D</div>
+        <div class="item A">A</div>
+        <div class="item B">B</div>
+        <div class="item C">C</div>
+        <div class="item D">D</div>
+        <div class="item A">A</div>
+        <div class="item B">B</div>
+        <div class="item C">C</div>
+        <div class="item D">D</div>
+        
+    </div>
+</body>
+</html>
